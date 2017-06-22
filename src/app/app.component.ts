@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
+import { LeftContentComponent} from './left-content/left-content.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'app';
+  title = 'FFXIV Testing';
+
+  constructor(){
+
+  }
 }

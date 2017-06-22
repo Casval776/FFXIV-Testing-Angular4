@@ -1,0 +1,5 @@
+<div class="login-form">
+<label for="username">Username</label><input id="username" #userName/>
+<label for="password">Password</label><input id="password" #passWord/>
+<button class="btn-default" (click)="processLogin(userName.value, passWord.value);">Login</button>
+</div>

@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="headerNavBar">
+      <ul class="nav navbar-nav navbar-left">
+        <li *ngFor="let item of menuItems">
+         <a href="#">{{item.Label}}</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+      <!--<ul class="col-sm-1"></ul>-->
+      <ul class="nav navbar-nav container-fluid">
+        <li>
+          <!--<input type="text" class="form-control" placeholder="Search..">-->
+          <!--<div class="nav navbar-nav navbar-header">-->
+            <!--<input #searchBox class="search-query form-control" id="search-box" (keyup)="search(searchBox.value)"/>-->
+          <!--</div>-->
+          <div id="custom-search-input">
+            <div class="input-group col-md-12">
+                <input #searchBox type="text" class="search-query form-control" placeholder="Search..." (keyup)="search(searchBox.value)"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">
+                        <span class=" glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
